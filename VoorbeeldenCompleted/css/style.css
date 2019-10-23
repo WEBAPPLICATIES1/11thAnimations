@@ -1,0 +1,80 @@
+div {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  background-color: mediumorchid;
+  color: #fff;
+}
+
+body {
+  /* Transitions */
+  /* Animations*/
+}
+
+body div:first-child {
+  top: 50px;
+  position: relative;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    top: 50px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    top: 200px;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  50% {
+    top: 50px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    top: 200px;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  to {
+    top: 50px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  from {
+    top: 50px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    top: 200px;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  50% {
+    top: 50px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    top: 200px;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  to {
+    top: 50px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

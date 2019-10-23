@@ -1,0 +1,83 @@
+div {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  background-color: mediumorchid;
+  color: #fff;
+
+  //   &:nth-child(2) {
+  //     // transform: scale(1.5);
+  //     // transform: rotate(45deg);
+  //     // transform: skewX(16deg);
+  //     transform: translateY(30px);
+  //   }
+
+  //   &:nth-child(3) {
+  //     // transform: scale(2, 10);
+  //     // transform: rotate(45deg);
+  //     // transform-origin: top;
+  //     // transform: skewY(33deg);
+  //     transform: translateX(100px);
+  //   }
+
+  //   &:nth-child(1) {
+  //     // transform: rotate(45deg);
+  //     // transform-origin: bottom left;
+  //     // transform: skew(16deg, 33deg);
+  //     transform: translate(-10px, 100px);
+  //   }
+}
+
+body {
+  /* Transitions */
+  //   div {
+  //     transition-duration: 5s;
+  //     transition-timing-function: ease;
+  //   }
+  //   &:hover div {
+  //     transition-duration: 10s;
+  //     &:nth-child(2) {
+  //       transform: translateY(30px);
+  //     }
+
+  //     &:nth-child(3) {
+  //       transform: translateX(100px);
+  //     }
+
+  //     &:nth-child(1) {
+  //       transform: translate(-10px, 100px);
+  //     }
+  //   }
+
+  /* Animations*/
+  div:first-child {
+    top: 50px;
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes bounce {
+  from {
+    top: 50px;
+    transform: scale(1);
+  }
+  25% {
+    top: 200px;
+    transform: scale(2);
+  }
+  50% {
+    top: 50px;
+    transform: scale(1);
+  }
+  75% {
+    top: 200px;
+    transform: scale(2);
+  }
+  to {
+    top: 50px;
+    transform: scale(1);
+  }
+}
